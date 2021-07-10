@@ -19,17 +19,37 @@
 
 
         .field:hover>.bat {
-            transform: rotate(305deg);
             transform-origin: top right;
+            transform: rotate(-60deg);
 
 
         }
+
+        .bat {
+            transition: transform .3s ease-in;
+        }
+
+
 
         .ball {
             height: 50px;
             width: 50px;
             border-radius: 25px;
             background-color: red;
+
+            position: relative;
+            left: 530px;
+
+
+
+        }
+
+        .field:hover .ball {
+            transform: translate(770px, -120px);
+            transition: transform 2s ease-out .3s;
+
+
+
 
         }
     </style>
